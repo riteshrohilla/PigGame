@@ -22,4 +22,5 @@ btnRoll.addEventListener('click', function () {
     // 2. Display dice
     diceEl.classList.remove('hidden')
     // 3. Check for rolled 1: if true, switch to next player
+    console.log("Hello world!");
 })
