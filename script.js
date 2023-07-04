@@ -32,7 +32,6 @@ const switchPlayer = function () {
     player0El.classList.toggle('player--active');
     player1El.classList.toggle('player--active');
 };
-}
 
 // Rolling dice functionality
 btnRoll.addEventListener('click', function () {
@@ -51,8 +50,9 @@ btnRoll.addEventListener('click', function () {
         document.getElementById(`current--${activePlayer}`).textContent = currentScore;
     } else {
         // Switch to next player
-
-    })
+        switchPlayer();
+    }
+});
 
 btnHold.addEventListener('click', function () {
     // 1. Add current score to active player's score
@@ -64,4 +64,5 @@ btnHold.addEventListener('click', function () {
     // Finish the game
 
     // Switch to the next player
+    switchPlayer();
 })
