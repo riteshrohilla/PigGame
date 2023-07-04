@@ -44,5 +44,6 @@ btnRoll.addEventListener('click', function () {
         document.getElementById(`current--${activePlayer}`).textContent = 0;
         currentScore = 0;
         activePlayer = activePlayer === 0 ? 1 : 0;
+        player0El.classList.toggle() //toggle method will add if it is there or it will remove it if it is not there
     }
 })
