@@ -80,4 +80,6 @@ btnNew.addEventListener('click', function () {
     score1El.textContent = 0;
     current0El.textContent = 0;
     current1El.textContent = 0;
+    player0El.classList.remove('player--winner');
+    player1El.classList.remove('player--winner');
 })
